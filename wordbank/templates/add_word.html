@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Add Word</title></head>
+<body>
+    <h2>Add a Word</h2>
+    <form method="POST" action="{{ url_for('add_word') }}">
+        <input type="text" name="word" placeholder="Word" required><br>
+        <textarea name="meaning" placeholder="Meaning" required></textarea><br>
+        <select name="language">
+            <option value="en-en">English</option>
+            <option value="en-hi">Hindi</option>
+        </select><br>
+        <button type="submit">Add Word</button>
+    </form>
+</body>
+</html>
